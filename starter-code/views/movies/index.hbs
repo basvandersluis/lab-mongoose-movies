@@ -1,0 +1,14 @@
+<h2>Movies</h2>
+<a href="/movies/new">Add a movie</a>
+{{#each moviesList}}
+<h3>Title: {{title}}</h3>
+<p>Genre: {{genre}}</p>
+<p>Plot: {{plot}}</p>
+<p>Cast: {{name}}</p>
+<ul>
+    {{#each cast}}
+    <li>{{name}}</li>
+    {{/each}}
+</ul>
+
+{{/each}}
